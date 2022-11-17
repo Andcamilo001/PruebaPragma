@@ -16,6 +16,12 @@
 		E069D76C292605F000F43AF2 /* PruebaPragmaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E069D76B292605F000F43AF2 /* PruebaPragmaTests.swift */; };
 		E069D776292605F000F43AF2 /* PruebaPragmaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E069D775292605F000F43AF2 /* PruebaPragmaUITests.swift */; };
 		E069D778292605F000F43AF2 /* PruebaPragmaUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E069D777292605F000F43AF2 /* PruebaPragmaUITestsLaunchTests.swift */; };
+		E069D78B2926073700F43AF2 /* WebServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = E069D78A2926073700F43AF2 /* WebServices.swift */; };
+		E069D78E2926077B00F43AF2 /* ModelCats.swift in Sources */ = {isa = PBXBuildFile; fileRef = E069D78D2926077B00F43AF2 /* ModelCats.swift */; };
+		E069D7902926091F00F43AF2 /* CatsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E069D78F2926091F00F43AF2 /* CatsViewModel.swift */; };
+		E069D7932926096100F43AF2 /* Constans.swift in Sources */ = {isa = PBXBuildFile; fileRef = E069D7922926096100F43AF2 /* Constans.swift */; };
+		E069D79929260C0C00F43AF2 /* CatsCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E069D79829260C0C00F43AF2 /* CatsCellView.swift */; };
+		E069D79B29260EB400F43AF2 /* CatsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E069D79A29260EB400F43AF2 /* CatsListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +54,12 @@
 		E069D771292605F000F43AF2 /* PruebaPragmaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PruebaPragmaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E069D775292605F000F43AF2 /* PruebaPragmaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PruebaPragmaUITests.swift; sourceTree = "<group>"; };
 		E069D777292605F000F43AF2 /* PruebaPragmaUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PruebaPragmaUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		E069D78A2926073700F43AF2 /* WebServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebServices.swift; sourceTree = "<group>"; };
+		E069D78D2926077B00F43AF2 /* ModelCats.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelCats.swift; sourceTree = "<group>"; };
+		E069D78F2926091F00F43AF2 /* CatsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatsViewModel.swift; sourceTree = "<group>"; };
+		E069D7922926096100F43AF2 /* Constans.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constans.swift; sourceTree = "<group>"; };
+		E069D79829260C0C00F43AF2 /* CatsCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatsCellView.swift; sourceTree = "<group>"; };
+		E069D79A29260EB400F43AF2 /* CatsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatsListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,7 +111,11 @@
 			isa = PBXGroup;
 			children = (
 				E069D755292605EB00F43AF2 /* PruebaPragmaApp.swift */,
-				E069D757292605EB00F43AF2 /* ContentView.swift */,
+				E069D7912926094200F43AF2 /* Utils */,
+				E069D789292606D300F43AF2 /* ViewModel */,
+				E069D788292606CD00F43AF2 /* View */,
+				E069D786292606C000F43AF2 /* Model */,
+				E069D78C2926074900F43AF2 /* Services */,
 				E069D759292605EF00F43AF2 /* Assets.xcassets */,
 				E069D75E292605F000F43AF2 /* Persistence.swift */,
 				E069D760292605F000F43AF2 /* PruebaPragma.xcdatamodeld */,
@@ -131,6 +147,48 @@
 				E069D777292605F000F43AF2 /* PruebaPragmaUITestsLaunchTests.swift */,
 			);
 			path = PruebaPragmaUITests;
+			sourceTree = "<group>";
+		};
+		E069D786292606C000F43AF2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E069D78D2926077B00F43AF2 /* ModelCats.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E069D788292606CD00F43AF2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E069D757292605EB00F43AF2 /* ContentView.swift */,
+				E069D79829260C0C00F43AF2 /* CatsCellView.swift */,
+				E069D79A29260EB400F43AF2 /* CatsListView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E069D789292606D300F43AF2 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				E069D78F2926091F00F43AF2 /* CatsViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		E069D78C2926074900F43AF2 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				E069D78A2926073700F43AF2 /* WebServices.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		E069D7912926094200F43AF2 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				E069D7922926096100F43AF2 /* Constans.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -264,8 +322,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				E069D762292605F000F43AF2 /* PruebaPragma.xcdatamodeld in Sources */,
+				E069D78B2926073700F43AF2 /* WebServices.swift in Sources */,
+				E069D7932926096100F43AF2 /* Constans.swift in Sources */,
+				E069D79B29260EB400F43AF2 /* CatsListView.swift in Sources */,
 				E069D75F292605F000F43AF2 /* Persistence.swift in Sources */,
+				E069D7902926091F00F43AF2 /* CatsViewModel.swift in Sources */,
+				E069D79929260C0C00F43AF2 /* CatsCellView.swift in Sources */,
 				E069D758292605EB00F43AF2 /* ContentView.swift in Sources */,
+				E069D78E2926077B00F43AF2 /* ModelCats.swift in Sources */,
 				E069D756292605EB00F43AF2 /* PruebaPragmaApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
