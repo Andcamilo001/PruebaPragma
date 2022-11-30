@@ -48,7 +48,7 @@ struct Cat: Codable, Identifiable {
         self.name = name
         self.id = id
         self.origin = origin
-        self.intelligence = intelligence
+        self.intelligence = intelligence 
         self.image = image
         
     }

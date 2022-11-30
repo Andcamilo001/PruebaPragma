@@ -32,9 +32,10 @@ struct CatCellView: View {
             }
             
             VStack(alignment: .leading, spacing: 5) {
-                Text(cat.name)
+                Text("Nombre: \(cat.name)")
                     .font(.headline)
-                Text(cat.origin)
+                Text("Origen: \(cat.origin)")
+                Text("Inteligencia: \(cat.intelligence)")
                 
             }
         }
